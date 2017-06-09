@@ -15,7 +15,11 @@ Vue.component('cms-subscriber', async (resolve, reject) => {
   const res = await fetch(dataUrl);
   const data = await res.json();
   resolve({
-    template: '<div>' + data.content + '</div>',
+    template: `<div>
+                <h3>Content load from : <a href="${dataUrl}">${dataUrl}</a></h3>
+                <h3>Content is :</h3>
+                ${data.content}
+              </div>`,
   })
 })
 
