@@ -1,6 +1,13 @@
 # vue-cms-integration-demo
 
-> demo how to integration CMS in Vue.js
+> [Live demo](https://www.paddingleft.com/Vue-CMS-integration-demo/) how to integration CMS in Vue.js 
+
+# How things work
+
+Logic could find in [main.js](./src/main.js)
+1. [async Component](https://vuejs.org/v2/guide/components.html#Async-Components) `cms-subscriber` fetch CMS data
+2. Set CMS content as `cms-subscriber`'s template
+3. Vue.js will handle any custom directive or component in the template
 
 ## Build Setup
 
@@ -14,5 +21,3 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
